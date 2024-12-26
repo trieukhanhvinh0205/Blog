@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Blog</title>
+    <link>http://localhost:1313/post/</link>
+    <description>Recent content in Posts on Blog</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Dec 2024 11:41:19 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Các Framework Java phổ biến</title>
+      <link>http://localhost:1313/post/c%C3%A1c-framework-java-ph%E1%BB%95-bi%E1%BA%BFn/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/c%C3%A1c-framework-java-ph%E1%BB%95-bi%E1%BA%BFn/</guid>
+      <description>&lt;h1 id=&#34;1-spring-framework&#34;&gt;&lt;strong&gt;1. Spring Framework&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Spring Framework là một trong những framework phổ biến nhất trong thế giới Java. Nó được phát triển bởi Rod Johnson vào năm 2002 và được sử dụng rộng rãi trong các dự án Java Enterprise. Spring Framework cung cấp cho nhà phát triển một loạt các tính năng như Dependency Injection, AOP, JDBC, MVC, và nhiều hơn nữa.&lt;/p&gt;
+&lt;p&gt;Một yếu tố then chốt của Spring là hỗ trợ cơ sở hạ tầng ở cấp độ ứng dụng: Spring tập trung vào “đường ống” của các ứng dụng doanh nghiệp để các nhóm có thể tập trung vào logic kinh doanh ở cấp độ ứng dụng, mà không có những ràng buộc không cần thiết với các môi trường triển khai cụ thể.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Các hàm và phạm vi trong JavaScript</title>
+      <link>http://localhost:1313/post/c%C3%A1c-h%C3%A0m-v%C3%A0-ph%E1%BA%A1m-vi-trong-javascript.md/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/c%C3%A1c-h%C3%A0m-v%C3%A0-ph%E1%BA%A1m-vi-trong-javascript.md/</guid>
+      <description>&lt;h1 id=&#34;các-hàm-và-phạm-vi-trong-javascript&#34;&gt;&lt;strong&gt;Các hàm và phạm vi trong JavaScript&lt;/strong&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;1-định-nghĩa-hàm&#34;&gt;&lt;strong&gt;1. Định nghĩa hàm&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;function greet(name) {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return `Hello, ${name}!`;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;h1 id=&#34;2-hàm-mũi-tên&#34;&gt;&lt;strong&gt;2. Hàm mũi tên&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;const square = (x) =&amp;gt; x * x;&lt;/p&gt;
+&lt;h1 id=&#34;3-phạm-vi-biến&#34;&gt;&lt;strong&gt;3. Phạm vi biến&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Local Scope: Chỉ hoạt động trong khối lệnh.&lt;/p&gt;
+&lt;p&gt;Global Scope: Có thể truy cập ở mọi nơi.&lt;/p&gt;
+&lt;h1 id=&#34;4-kết-luận&#34;&gt;&lt;strong&gt;4. Kết luận&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Hàm và phạm vi giúp tổ chức mã nguồn hiệu quả và tránh xung đột biến.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Các thành phần cơ bản</title>
+      <link>http://localhost:1313/post/c%C3%A1c-th%C3%A0nh-ph%E1%BA%A7n-c%C6%A1-b%E1%BA%A3n/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/c%C3%A1c-th%C3%A0nh-ph%E1%BA%A7n-c%C6%A1-b%E1%BA%A3n/</guid>
+      <description>&lt;h1 id=&#34;các-thành-phần-cơ-bản&#34;&gt;&lt;strong&gt;Các thành phần cơ bản&lt;/strong&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;chú-thích-comment&#34;&gt;&lt;strong&gt;Chú thích (comment)&lt;/strong&gt;&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Là những dòng văn bản do người lập trình viết ra để chú giải cho những gì mình viết trong chương trình.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Những dòng chú thích không được biên dịch trong quá trình thực thi chương trình.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Có thể phục vụ trong việc sửa lỗi (debug) chương trình.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Một dòng chú thích bắt đầu bằng dấu //; nhiều dòng bắt đầu bằng /* và kết thúc bằng */.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cài đặt JDK</title>
+      <link>http://localhost:1313/post/c%C3%A0i-%C4%91%E1%BA%B7t--jdk-d%C3%A0nh-cho-java/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/c%C3%A0i-%C4%91%E1%BA%B7t--jdk-d%C3%A0nh-cho-java/</guid>
+      <description>&lt;h1 id=&#34;1-cài-đặt&#34;&gt;&lt;strong&gt;1. Cài Đặt&lt;/strong&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;bước-1-cài-đặt-jdk-java-development-kit&#34;&gt;&lt;strong&gt;Bước 1: Cài đặt JDK (Java Development Kit)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Tải JDK mới nhất từ Oracle hoặc OpenJDK.&lt;/p&gt;
+&lt;h1 id=&#34;bước-2-thiết-lập-môi-trường&#34;&gt;&lt;strong&gt;Bước 2: Thiết lập môi trường&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;export JAVA_HOME=/path/to/jdk&lt;/p&gt;
+&lt;p&gt;export PATH=$JAVA_HOME/bin:$PATH&lt;/p&gt;
+&lt;h1 id=&#34;2chương-trình-đầu-tiên-chạy&#34;&gt;2.Chương trình đầu tiên chạy&lt;/h1&gt;
+&lt;p&gt;public class HelloWorld {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public static void main(String[] args) {
+
+    System.out.println(&amp;quot;Hello, World!&amp;quot;);
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;h1 id=&#34;cách-chạy-chương-trình&#34;&gt;&lt;strong&gt;Cách chạy chương trình&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;javac HelloWorld.java # Biên dịch&lt;/p&gt;
+&lt;p&gt;java HelloWorld # Chạy chương trình&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Chương trình Java</title>
+      <link>http://localhost:1313/post/ch%C6%B0%C6%A1ng-tr%C3%ACnh-java/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/ch%C6%B0%C6%A1ng-tr%C3%ACnh-java/</guid>
+      <description>&lt;h1 id=&#34;chương-trình-java&#34;&gt;&lt;strong&gt;Chương trình Java&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Như đã đề cập ở chương I, một chương trình Java sẽ được chuyển sang mã trung gian bởi một chương trình gọi là trình biên dịch (compiler) trước khi được một chương trình khác gọi là JVM (Java Virtual Machine) chuyển sang mã máy.&lt;/p&gt;
+&lt;p&gt;Chương trình Java có một số đặc điểm:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Chương trình Java gồm các dòng mã thực thi một nhiệm vụ nào đó.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Đặc điểm nổi bật</title>
+      <link>http://localhost:1313/post/%C4%91%E1%BA%B7c-%C4%91i%E1%BB%83m-n%E1%BB%95i-b%E1%BA%ADt-c%E1%BB%A7a-java/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/%C4%91%E1%BA%B7c-%C4%91i%E1%BB%83m-n%E1%BB%95i-b%E1%BA%ADt-c%E1%BB%A7a-java/</guid>
+      <description>&lt;h1 id=&#34;7-đặc-điểm-nổi-bật-của-ngôn-ngữ-lập-trình-java&#34;&gt;7 đặc điểm nổi bật của ngôn ngữ lập trình Java&lt;/h1&gt;
+&lt;h1 id=&#34;1-máy-ảo-java-jvm---java-virtual-machine&#34;&gt;&lt;strong&gt;1. Máy ảo Java (JVM - Java Virtual Machine)&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Tất cả các chương trình muốn thực thi được thì phải được biên dịch ra mã máy. Mã máy của từng kiến trúc CPU
+của mỗi máy tính là khác nhau (tập lệnh mã máy của CPU Intel, CPU Solarix, CPU Macintosh &amp;hellip; là khác nhau), vì
+vậy trước đây một chương trình sau khi được biên dịch xong chỉ có thể chạy được trên một kiến trúc CPU cụ thể
+nào đó. Đối với CPU Intel chúng ta có thể chạy các hệ điều hành như Microsoft Windows, Unix, Linux, OS/2, &amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Giới thiệu về Java</title>
+      <link>http://localhost:1313/post/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-java/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-java/</guid>
+      <description>&lt;h1 id=&#34;1-java-là-gì&#34;&gt;&lt;strong&gt;1. Java là gì?&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/images/ngon-ngu%CC%83-la%CC%A3p-tri%CC%80nh-Java-.jpg&#34;&gt;
+Java được biết đến là ngôn ngữ lập trình phổ biến trên thế giới. Nó được ra mắt vào năm 1995 do James Gosling khởi xướng và được phát triển bởi Sun Microsystems. Java được sử dụng rộng rãi bởi nó có thể chạy trên rất nhiều nền tảng khác nhau. Điển hình như: Windows, Mac và UNIX. Để làm được điều đó, Java đã lấy một phần lớn các cú pháp từ 2 ngôn ngữ lập trình C và C++.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Top 10 ứng dụng thực tế của Java</title>
+      <link>http://localhost:1313/post/top-10-%E1%BB%A9ng-d%E1%BB%A5ng-th%E1%BB%B1c-t%E1%BA%BF-c%E1%BB%A7a-java/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/top-10-%E1%BB%A9ng-d%E1%BB%A5ng-th%E1%BB%B1c-t%E1%BA%BF-c%E1%BB%A7a-java/</guid>
+      <description>&lt;h1 id=&#34;top-10-ứng-dụng-thực-tế-của-java&#34;&gt;&lt;strong&gt;TOP 10 Ứng dụng thực tế của JAVA&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Có nhiều nơi Java được ứng dụng trong thế giới thực, bắt đầu từ trang web thương mại điện tử đến các ứng dụng Android, từ ứng dụng khoa học đến các ứng dụng tài chính như hệ thống giao dịch điện tử, từ các trò chơi như Minecraft đến các ứng dụng máy tính để bàn như Eclipse, Netbeans và IntelliJ, từ một thư viện mã nguồn mở cho các ứng dụng J2ME, v.v.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Vòng lặp - điều kiện Java</title>
+      <link>http://localhost:1313/post/v%C3%B2ng-l%E1%BA%ADp---%C4%91i%E1%BB%81u-ki%E1%BB%87n-java/</link>
+      <pubDate>Thu, 26 Dec 2024 11:41:19 +0700</pubDate>
+      <guid>http://localhost:1313/post/v%C3%B2ng-l%E1%BA%ADp---%C4%91i%E1%BB%81u-ki%E1%BB%87n-java/</guid>
+      <description>&lt;h1 id=&#34;vòng-lặp-và-câu-lệnh-điều-kiện-trong-javascript&#34;&gt;&lt;strong&gt;Vòng lặp và câu lệnh điều kiện trong JavaScript&lt;/strong&gt;&lt;/h1&gt;
+&lt;h1 id=&#34;1-câu-lệnh-điều-kiện&#34;&gt;&lt;strong&gt;1. Câu lệnh điều kiện&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;if (age &amp;gt; 18) {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&#39;Bạn đã đủ tuổi.&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;} else {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;console.log(&#39;Bạn chưa đủ tuổi.&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;h1 id=&#34;2-vòng-lặp&#34;&gt;&lt;strong&gt;2. Vòng lặp&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;for (let i = 0; i &amp;lt; 5; i++) {&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;console.log(i);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;}&lt;/p&gt;
+&lt;h1 id=&#34;3-kết-luận&#34;&gt;&lt;strong&gt;3. Kết luận&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;Sử dụng điều kiện và vòng lặp giúp kiểm soát luồng thực thi chương trình.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head>
+	<meta name="generator" content="Hugo 0.140.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Blog</title>
+
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Blog">
+                    <span class="active">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Post</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Abouts">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+
+<article class="first-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Các Framework Java phổ biến
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Spring Framework Spring Framework là một trong những framework phổ biến nhất trong thế giới Java. Nó được phát triển bởi Rod Johnson vào năm 2002 và được sử dụng rộng rãi trong các dự án Java Enterprise. Spring Framework cung cấp cho nhà phát triển một loạt các tính năng như Dependency Injection, AOP, JDBC, MVC, và nhiều hơn nữa.
+Một yếu tố then chốt của Spring là hỗ trợ cơ sở hạ tầng ở cấp độ ứng dụng: Spring tập trung vào “đường ống” của các ứng dụng doanh nghiệp để các nhóm có thể tập trung vào logic kinh doanh ở cấp độ ứng dụng, mà không có những ràng buộc không cần thiết với các môi trường triển khai cụ thể.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Các Framework Java phổ biến" href="http://localhost:1313/post/c%C3%A1c-framework-java-ph%E1%BB%95-bi%E1%BA%BFn/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Các hàm và phạm vi trong JavaScript
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Các hàm và phạm vi trong JavaScript 1. Định nghĩa hàm function greet(name) {
+return `Hello, ${name}!`;}
+2. Hàm mũi tên const square = (x) =&gt; x * x;
+3. Phạm vi biến Local Scope: Chỉ hoạt động trong khối lệnh.
+Global Scope: Có thể truy cập ở mọi nơi.
+4. Kết luận Hàm và phạm vi giúp tổ chức mã nguồn hiệu quả và tránh xung đột biến.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Các hàm và phạm vi trong JavaScript" href="http://localhost:1313/post/c%C3%A1c-h%C3%A0m-v%C3%A0-ph%E1%BA%A1m-vi-trong-javascript.md/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Các thành phần cơ bản
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Các thành phần cơ bản Chú thích (comment) Là những dòng văn bản do người lập trình viết ra để chú giải cho những gì mình viết trong chương trình.
+Những dòng chú thích không được biên dịch trong quá trình thực thi chương trình.
+Có thể phục vụ trong việc sửa lỗi (debug) chương trình.
+Một dòng chú thích bắt đầu bằng dấu //; nhiều dòng bắt đầu bằng /* và kết thúc bằng */.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Các thành phần cơ bản" href="http://localhost:1313/post/c%C3%A1c-th%C3%A0nh-ph%E1%BA%A7n-c%C6%A1-b%E1%BA%A3n/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Cài đặt JDK
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Cài Đặt Bước 1: Cài đặt JDK (Java Development Kit) Tải JDK mới nhất từ Oracle hoặc OpenJDK.
+Bước 2: Thiết lập môi trường export JAVA_HOME=/path/to/jdk
+export PATH=$JAVA_HOME/bin:$PATH
+2.Chương trình đầu tiên chạy public class HelloWorld {
+public static void main(String[] args) {System.out.println(&#34;Hello, World!&#34;);}}
+Cách chạy chương trình javac HelloWorld.java # Biên dịch
+java HelloWorld # Chạy chương trình
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Cài đặt JDK" href="http://localhost:1313/post/c%C3%A0i-%C4%91%E1%BA%B7t--jdk-d%C3%A0nh-cho-java/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Chương trình Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Chương trình Java Như đã đề cập ở chương I, một chương trình Java sẽ được chuyển sang mã trung gian bởi một chương trình gọi là trình biên dịch (compiler) trước khi được một chương trình khác gọi là JVM (Java Virtual Machine) chuyển sang mã máy.
+Chương trình Java có một số đặc điểm:
+Chương trình Java gồm các dòng mã thực thi một nhiệm vụ nào đó.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Chương trình Java" href="http://localhost:1313/post/ch%C6%B0%C6%A1ng-tr%C3%ACnh-java/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Đặc điểm nổi bật
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>7 đặc điểm nổi bật của ngôn ngữ lập trình Java 1. Máy ảo Java (JVM - Java Virtual Machine) Tất cả các chương trình muốn thực thi được thì phải được biên dịch ra mã máy. Mã máy của từng kiến trúc CPU của mỗi máy tính là khác nhau (tập lệnh mã máy của CPU Intel, CPU Solarix, CPU Macintosh … là khác nhau), vì vậy trước đây một chương trình sau khi được biên dịch xong chỉ có thể chạy được trên một kiến trúc CPU cụ thể nào đó. Đối với CPU Intel chúng ta có thể chạy các hệ điều hành như Microsoft Windows, Unix, Linux, OS/2, …
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Đặc điểm nổi bật" href="http://localhost:1313/post/%C4%91%E1%BA%B7c-%C4%91i%E1%BB%83m-n%E1%BB%95i-b%E1%BA%ADt-c%E1%BB%A7a-java/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Giới thiệu về Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>1. Java là gì? Java được biết đến là ngôn ngữ lập trình phổ biến trên thế giới. Nó được ra mắt vào năm 1995 do James Gosling khởi xướng và được phát triển bởi Sun Microsystems. Java được sử dụng rộng rãi bởi nó có thể chạy trên rất nhiều nền tảng khác nhau. Điển hình như: Windows, Mac và UNIX. Để làm được điều đó, Java đã lấy một phần lớn các cú pháp từ 2 ngôn ngữ lập trình C và C&#43;&#43;.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Giới thiệu về Java" href="http://localhost:1313/post/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-java/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Top 10 ứng dụng thực tế của Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>TOP 10 Ứng dụng thực tế của JAVA Có nhiều nơi Java được ứng dụng trong thế giới thực, bắt đầu từ trang web thương mại điện tử đến các ứng dụng Android, từ ứng dụng khoa học đến các ứng dụng tài chính như hệ thống giao dịch điện tử, từ các trò chơi như Minecraft đến các ứng dụng máy tính để bàn như Eclipse, Netbeans và IntelliJ, từ một thư viện mã nguồn mở cho các ứng dụng J2ME, v.v.
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Top 10 ứng dụng thực tế của Java" href="http://localhost:1313/post/top-10-%E1%BB%A9ng-d%E1%BB%A5ng-th%E1%BB%B1c-t%E1%BA%BF-c%E1%BB%A7a-java/"></a>
+</article>
+
+<article class="post-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Vòng lặp - điều kiện Java
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Vòng lặp và câu lệnh điều kiện trong JavaScript 1. Câu lệnh điều kiện if (age &gt; 18) {
+console.log(&#39;Bạn đã đủ tuổi.&#39;);} else {
+console.log(&#39;Bạn chưa đủ tuổi.&#39;);}
+2. Vòng lặp for (let i = 0; i &lt; 5; i&#43;&#43;) {
+console.log(i);}
+3. Kết luận Sử dụng điều kiện và vòng lặp giúp kiểm soát luồng thực thi chương trình.
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span></footer>
+  <a class="entry-link" aria-label="post link to Vòng lặp - điều kiện Java" href="http://localhost:1313/post/v%C3%B2ng-l%E1%BA%ADp---%C4%91i%E1%BB%81u-ki%E1%BB%87n-java/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

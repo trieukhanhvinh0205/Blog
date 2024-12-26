@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Blog'
+theme = 'hugo-PaperMod'
+
+[menu]
+  [[menu.main]]
+    pageRef="/"
+    name = 'Home'
+    url = '/'
+    weight = 10
+  [[menu.main]]
+    pageRef="Post"
+    name = 'Post'
+    url = '/post/'
+    weight = 20
+  [[menu.main]]
+    pageRef="about"
+    name = 'About'
+    url = '/about/'
+    weight = 30
+
+
+
+
+
+
+
+
+
+
+
+

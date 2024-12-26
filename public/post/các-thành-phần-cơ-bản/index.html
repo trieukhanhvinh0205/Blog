@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Các thành phần cơ bản | Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="Các thành phần cơ bản
+Chú thích (comment)
+
+
+Là những dòng văn bản do người lập trình viết ra để chú giải cho những gì mình viết trong chương trình.
+
+
+Những dòng chú thích không được biên dịch trong quá trình thực thi chương trình.
+
+
+Có thể phục vụ trong việc sửa lỗi (debug) chương trình.
+
+
+Một dòng chú thích bắt đầu bằng dấu //; nhiều dòng bắt đầu bằng /* và kết thúc bằng */.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/c%C3%A1c-th%C3%A0nh-ph%E1%BA%A7n-c%C6%A1-b%E1%BA%A3n/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/c%C3%A1c-th%C3%A0nh-ph%E1%BA%A7n-c%C6%A1-b%E1%BA%A3n/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Blog">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Post</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Abouts">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Các thành phần cơ bản
+    </h1>
+    <div class="post-meta"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="các-thành-phần-cơ-bản"><strong>Các thành phần cơ bản</strong><a hidden class="anchor" aria-hidden="true" href="#các-thành-phần-cơ-bản">#</a></h1>
+<h1 id="chú-thích-comment"><strong>Chú thích (comment)</strong><a hidden class="anchor" aria-hidden="true" href="#chú-thích-comment">#</a></h1>
+<ul>
+<li>
+<p>Là những dòng văn bản do người lập trình viết ra để chú giải cho những gì mình viết trong chương trình.</p>
+</li>
+<li>
+<p>Những dòng chú thích không được biên dịch trong quá trình thực thi chương trình.</p>
+</li>
+<li>
+<p>Có thể phục vụ trong việc sửa lỗi (debug) chương trình.</p>
+</li>
+<li>
+<p>Một dòng chú thích bắt đầu bằng dấu //; nhiều dòng bắt đầu bằng /* và kết thúc bằng */.</p>
+</li>
+<li>
+<p>Xem các ví dụ sau:</p>
+</li>
+</ul>
+<p>// Lệnh hiển thị dòng Hello World! ra màn hình</p>
+<p>System.out.println(&ldquo;Hello World!&rdquo;);</p>
+<p>Dòng đầu tiên là chú thích của người lập trình. Chú thích cũng có thể được viết thành nhiều dòng:</p>
+<p>// Lệnh hiển thị</p>
+<p>// dòng Hello World!</p>
+<p>// ra màn hình</p>
+<p>System.out.println(&ldquo;Hello World!&rdquo;);</p>
+<p>Tương đương:</p>
+<p>/* Lệnh hiển thị</p>
+<p>dòng Hello World!</p>
+<p>ra màn hình */</p>
+<p>System.out.println(&ldquo;Hello World!&rdquo;);</p>
+<h1 id="khoảng-trắng-white-space"><strong>Khoảng trắng (white space)</strong><a hidden class="anchor" aria-hidden="true" href="#khoảng-trắng-white-space">#</a></h1>
+<p>Khoảng trắng bao gồm việc xuống dòng (phím Enter), tab (phím Tab), hay khoảng trắng (phím Spacebar). Mặc định, trình biên dịch Java sẽ
+bỏ qua các khoảng trắng nên hai lệnh sau là tương đương:</p>
+<p>System.out.println(&ldquo;Hello World!&rdquo;);</p>
+<p>Và</p>
+<p>System  .</p>
+<pre><code>    out
+
+    .
+
+   println(&quot;Hello World!&quot;);
+</code></pre>
+<p>Tuy nhiên có một số ngoại lệ, cụ thể là kiểu String, trình biên dịch sẽ hiểu khoảng trắng là kí tự hay chuỗi. Do đó main và ma in là
+khác nhau.</p>
+<h1 id="từ-khoá-keywords"><strong>Từ khoá (keywords)</strong><a hidden class="anchor" aria-hidden="true" href="#từ-khoá-keywords">#</a></h1>
+<p>Là các từ được hỗ trợ bởi Java và người lập trình không thể thay đổi hay định nghĩa lại.</p>
+<p>Các từ khoá trong Java:</p>
+<p>abstract else interface switch assert enum long synchronized</p>
+<p>boolean extends native this break false new throw byte final</p>
+<p>null throws case finally package transient catch float private</p>
+<p>true char for protected try class goto public void const if</p>
+<p>return volatile continue implements short while default import</p>
+<p>static do instanceof strictfp double int super</p>
+<h1 id="các-định-danh-identifiers"><strong>Các định danh (identifiers)</strong><a hidden class="anchor" aria-hidden="true" href="#các-định-danh-identifiers">#</a></h1>
+<p>Là tên biến, tên hằng hay tên các phương thức xuất hiện trong chương trình. Định danh có thể được định nghĩa bởi Java như main hay
+println và có thể được định nghĩa bởi người sử dụng. Định danh cấu tạo bởi các kí tự, kí số, dấu _, dấu $. Không được bắt đầu bằng kí
+số. Định danh có thể có chiều dài bất kỳ trong Java.</p>
+<p>Một số định danh hợp lệ:</p>
+<p>first</p>
+<p>conversion</p>
+<p>payRate</p>
+<p>$Amount</p>
+<p>Một số định danh không hợp lệ</p>
+<p>First Name (định danh không có khoảng trắng)</p>
+<p>Hello! (không dùng dấu ! trong định danh)</p>
+<p>One+two (+ không được dùng trong định danh)</p>
+<p>2nd(định danh không được bắt đầu bằng số)</p>
+<h1 id="kiểu-dữ-liệu-sơ-cấp-primitive-data-types"><strong>Kiểu dữ liệu sơ cấp (primitive data types)</strong><a hidden class="anchor" aria-hidden="true" href="#kiểu-dữ-liệu-sơ-cấp-primitive-data-types">#</a></h1>
+<p>Các ngôn ngữ lập trình thường cung cấp một danh sách các kiểu dữ liệu sơ cấp (primitive data types) khác nhau dùng để biểu diễn các
+kiểu thông tin khác nhau như số (numbers), thời gian (date, time), văn bản (text), v.v.</p>
+<p>Có 3 kiểu dữ liệu sơ cấp trong Java là kiểu số nguyên, kiểu thực (dấu chấm động) và kiểu luận lý.</p>
+<p>Kiểu số nguyên gồm các kiểu sau:</p>
+<p>Kiểu	Kích cỡ (Byte)	Giá trị</p>
+<p>char	2 (16 bits)	0 -&gt; 65535</p>
+<p>byte	1 (8 bits)	-128 -&gt; +127</p>
+<p>short	2 (16 bits)	-32768 -&gt; +32767</p>
+<p>int	4 (32 bits)	-2147483648 -&gt; +2147483647</p>
+<p>long	8 (64 bits)	-263 -&gt; 263-1</p>
+<h1 id="biến"><strong>Biến</strong><a hidden class="anchor" aria-hidden="true" href="#biến">#</a></h1>
+<p>Để làm việc với các dữ liệu, chúng ta cần lưu trữ nó trong một biến. Cú pháp khai báo một biến là:</p>
+<p>Kiểu_Dữ_Liệu tên_biến;</p>
+<p><strong>tên_biến</strong> là tên của biến cần khai báo gồm các kí tự, số, dấu _, và không được bắt đầu bằng số.</p>
+<p><strong>Kiểu_Dữ_Liệu</strong> là một trong các kiểu dữ liệu sơ cấp hay kiểu do người dùng định nghĩa.</p>
+<p>Ví dụ khai báo một biến kiểu int, tên biến là x như sau:</p>
+<p>int x;</p>
+<p>Sau khi khai báo biến, chúng ta có thể gán giá trị cho chúng, ví dụ gán giá trị 5 đến biến x:</p>
+<p>int x;</p>
+<p>x = 5;</p>
+<p>Chúng ta cũng có thể kết hợp khai báo và gán giá trị cho biến như ví dụ:</p>
+<p>int x = 5;</p>
+<p><strong>Một số chú ý khi đặt tên biến:</strong></p>
+<ul>
+<li>
+<p>Không bắt đầu bằng số</p>
+</li>
+<li>
+<p>Không trùng với các từ khoá (keywords), là các từ vựng có sẵn trong ngôn ngữ.</p>
+</li>
+<li>
+<p>Đặt theo mục đích, ví dụ firstName, age.</p>
+</li>
+<li>
+<p>Tuân theo chuẩn camel case, tức là nếu tên biến gồm nhiều từ như firstName (gồm first và Name) thì từ đầu tiên viết thường tất cả các</p>
+</li>
+<li>
+<p>kí tự, các từ kế tiếp sẽ viết hoa kí tự đầu tiên, như firstName.</p>
+</li>
+</ul>
+<h1 id="hằng-constant"><strong>Hằng (constant)</strong><a hidden class="anchor" aria-hidden="true" href="#hằng-constant">#</a></h1>
+<p>Hằng là vùng nhớ chứa nội dung không thay đổi (khác với biến chứa nội dung có thể thay đổi) trong quá trình chương trình thực thi.</p>
+<p>Khai báo hằng trong Java:</p>
+<p>[static] final Kiểu_dữ_liệu Tên_hằng = giá_trị_khởi tạo;</p>
+<p>Từ khoá static có thể dùng trong một số trường hợp đặc biệt, final bắt buộc; Kiểu_dữ_liệu là kiểu dữ liệu của hằng; Tên_hằng là tên của
+hằng; giá_trị_khởi_tạo là các giá trị tương ứng với kiểu dữ liệu Kiểu_dữ_liệu (hay còn gọi là literal).</p>
+<p>Các ví dụ:</p>
+<p>final double PI = 3.14;
+final int NO_OF_STUDENTS = 20;</p>
+<h1 id="kiểu-chuỗi-string"><strong>Kiểu chuỗi (string)</strong><a hidden class="anchor" aria-hidden="true" href="#kiểu-chuỗi-string">#</a></h1>
+<p>Kiểu chuỗi (string) không phải là kiểu dữ liệu sơ cấp nhưng thường được sử dụng phổ biến với các kiểu dữ liệu sơ cấp khác. Một chuỗi là
+một dãy các ký tự và có thể được dùng để thể hiện các văn bản (text), số (numbers), các kí hiệu Unicode. Chuỗi được chứa trong cặp nháy
+kép.</p>
+<p>Trong Java, một biến kiểu chuỗi sẽ được khai báo kiểu String. Ví dụ biến str</p>
+<p>String str = &ldquo;This is a string variable!&rdquo;;</p>
+<p>Các chuỗi có thể kết hợp với nhau bằng toán tử +, ví dụ:</p>
+<p>String str = &ldquo;Hello, &quot; + &ldquo;Minh!&rdquo; ;// Hello, Minh!</p>
+<p>Một chuỗi cũng có thể được định nghĩa trên nhiều dòng như ví dụ sau</p>
+<p>String description = &ldquo;Strings can &quot; +</p>
+<p>&ldquo;be defined on multiple &quot; +</p>
+<p>&ldquo;lines with the + operator!&rdquo;;</p>
+<p>Không thể gán trực tiếp một giá trị kiểu String vào một biến có kiểu dữ liệu sơ cấp dạng số như int, float. Ví dụ sau sẽ gây ra lỗi:</p>
+<p>String j =&ldquo;7&rdquo;;</p>
+<p>int i = 10 + j;</p>
+<p>Giải pháp cho vấn đề này là dùng các phương thức chuyển kiểu chuỗi sang kiểu dữ liệu sơ cấp dạng số tương ứng như Integer.parseInt hay
+Float.parseFloat. Ví dụ trên được viết lại:</p>
+<p>String j =&ldquo;7&rdquo;;
+int i = 10 + Integer.parseInt(j);// 17</p>
+<h1 id="ép-kiểu-casting"><strong>Ép kiểu (casting)</strong><a hidden class="anchor" aria-hidden="true" href="#ép-kiểu-casting">#</a></h1>
+<p>Ép kiểu trong Java là thay đổi giá trị của một biến hay một giá trị (literals) sang kiểu dữ liệu sơ cấp khác. Để ép kiểu, chúng ta chỉ
+cần đặt kiểu cần chuyển đến trong cặp dấu ngoặc đặt ngay trước giá trị cần ép kiểu. Các ví dụ sau sẽ giúp chúng ta dễ hình dung hơn:</p>
+<p>int i = (int) 7.8; // chuyển giá trị 7.8 kiểu double sang kiểu integer</p>
+<p>double d = (double) 89.7f; // chuyển giá trị 89.7f kiểu float sang kiểu double</p>
+<p>short q = (short) (i<em>d); // chuyển giá trị i</em>d kiểu double sang kiểu short</p>
+<p>System.out.println(i);</p>
+<p>System.out.println(d);</p>
+<p>System.out.println(q);</p>
+<p>Kết quả:</p>
+<p>7</p>
+<p>89.69999694824219</p>
+<p>7</p>
+<p>Mỗi một kiểu dữ liệu sơ cấp như int, float, double, v.v. sẽ có một kiểu lớp tương ứng như Integer, Float, Double, v.v. quá trình chuyển
+kiểu từ kiểu sơ cấp sang kiểu lớp tương ứng, như chuyển int sang Integer, gọi là boxing. Quá trình ngược lại, như từ Integer sang int,
+gọi là unboxing. Xem thêm về autoboxing.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

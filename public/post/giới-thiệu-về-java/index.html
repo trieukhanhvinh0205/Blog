@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Giới thiệu về Java | Blog</title>
+<meta name="keywords" content="">
+<meta name="description" content="1. Java là gì?
+
+Java được biết đến là ngôn ngữ lập trình phổ biến trên thế giới. Nó được ra mắt vào năm 1995 do James Gosling khởi xướng và được phát triển bởi Sun Microsystems. Java được sử dụng rộng rãi bởi nó có thể chạy trên rất nhiều nền tảng khác nhau. Điển hình như: Windows, Mac và UNIX. Để làm được điều đó, Java đã lấy một phần lớn các cú pháp từ 2 ngôn ngữ lập trình C và C&#43;&#43;.">
+<meta name="author" content="">
+<link rel="canonical" href="http://localhost:1313/post/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-java/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.d72444526d7ecbdb0015438a7fa89054a658bf759d0542e2e5df81ce94b493ee.css" integrity="sha256-1yREUm1&#43;y9sAFUOKf6iQVKZYv3WdBULi5d&#43;BzpS0k&#43;4=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/post/gi%E1%BB%9Bi-thi%E1%BB%87u-v%E1%BB%81-java/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Blog (Alt + H)">Blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/" title="Blog">
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/post/" title="Posts">
+                    <span>Post</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="Abouts">
+                    <span>About</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    
+    <h1 class="post-title entry-hint-parent">
+      Giới thiệu về Java
+    </h1>
+    <div class="post-meta"><span title='2024-12-26 11:41:19 +0700 +07'>December 26, 2024</span>
+
+</div>
+  </header> 
+  <div class="post-content"><h1 id="1-java-là-gì"><strong>1. Java là gì?</strong><a hidden class="anchor" aria-hidden="true" href="#1-java-là-gì">#</a></h1>
+<p><img loading="lazy" src="/images/ngon-ngu%CC%83-la%CC%A3p-tri%CC%80nh-Java-.jpg">
+Java được biết đến là ngôn ngữ lập trình phổ biến trên thế giới. Nó được ra mắt vào năm 1995 do James Gosling khởi xướng và được phát triển bởi Sun Microsystems. Java được sử dụng rộng rãi bởi nó có thể chạy trên rất nhiều nền tảng khác nhau. Điển hình như: Windows, Mac và UNIX. Để làm được điều đó, Java đã lấy một phần lớn các cú pháp từ 2 ngôn ngữ lập trình C và C++.</p>
+<p>Các chương trình chạy bằng ngôn ngữ lập trình Java bao gồm các class, chúng được sử dụng để xác định các phương thức hoặc đối tượng. Vì thế, tuy được lấy cú pháp từ C và C++, nhưng nó khác biệt hoàn toàn với chúng. Java được xem là ngôn ngữ lập trình cứng hơn bất kỳ ngôn ngữ nào khác, bởi tất cả các hàm và biến của của chúng phải được định nghĩa cụ thể.</p>
+<h1 id="2-các-tính-năng-quan-trọng-của-java-bạn-nên-biết"><strong>2. Các tính năng quan trọng của Java bạn nên biết</strong><a hidden class="anchor" aria-hidden="true" href="#2-các-tính-năng-quan-trọng-của-java-bạn-nên-biết">#</a></h1>
+<p><img loading="lazy" src="/images/Java-la%CC%80-ngon-ngu-lap-trinh-huong-doi-tuong.jpg">
+Java là ngôn ngữ lập trình lâu đời và phổ biến nhất hiện nay. Vậy bạn đã hiểu biết được bao nhiêu về chúng? Hãy cùng theo dõi những tính năng của nó mà bạn nên biết ngay dưới đây nhé!</p>
+<h1 id="đây-là-ngôn-ngữ-lập-trình-khá-đơn-giản-và-dễ-hiểu"><strong>Đây là ngôn ngữ lập trình khá đơn giản và dễ hiểu</strong><a hidden class="anchor" aria-hidden="true" href="#đây-là-ngôn-ngữ-lập-trình-khá-đơn-giản-và-dễ-hiểu">#</a></h1>
+<p>Ngôn ngữ lập trình Java mang phong cách mã hóa rất rõ ràng và dễ hiểu. Ngay từ khi phát hành, Java đã loại bỏ sự phức tạp của ngôn ngữ C và C++. Vì thế, nó trở nên đơn giản để bắt đầu học tập hơn rất nhiều so với các ngôn ngữ khác.</p>
+<p>Ngoài việc loại bỏ các khái niệm khó hiểu, không rõ ràng, có thêm một điều khoản nữa mà bạn cần lưu ý đó là: không cần phải loại bỏ các đối tượng không được tham chiếu một cách rõ ràng.</p>
+<p>Tổng hợp lại, Java quen thuộc vì:</p>
+<p>Nó sử dụng nền tảng là các ngôn ngữ quen thuộc như C và C++, do đó nó chứa nhiều tính năng của các ngôn ngữ này.
+Java đã loại bỏ các nhược điểm và sự phức tạp của C và C++. Do đó, nếu bạn đã có nền tảng về C/C++ thì bạn sẽ thấy Java khá quen thuộc và dễ dàng.</p>
+<h1 id="đây-là-ngôn-ngữ-lập-trình-hướng-đối-tượng"><strong>Đây là ngôn ngữ lập trình hướng đối tượng</strong><a hidden class="anchor" aria-hidden="true" href="#đây-là-ngôn-ngữ-lập-trình-hướng-đối-tượng">#</a></h1>
+<p>Tiếp theo chúng ta sẽ cùng nhau thảo luận về tính năng OOP của Java. Java hỗ trợ mạnh mẽ các khái niệm về lập trình hướng đối tượng, vì thế nó được gọi là “ngôn ngữ hướng đối tượng thuần túy”. Một số tính năng lập trình hướng đối tượng mà Java hỗ trợ nhiều nhất là: Đóng gói, tính trừu tượng và tính Kế thừa.</p>
+<p>Phần lớn những thứ trong Java đều là một đối tượng. Tất cac những chương trình vav dữ liệu đều tồn tại trong các đối tượng và các lớp. Đi kèm với tập hợp các lớp có thể mở rộng được tổ chức trong các gói.</p>
+<h1 id="java-là-một-nền-tảng-độc-lập"><strong>Java là một nền tảng độc lập</strong><a hidden class="anchor" aria-hidden="true" href="#java-là-một-nền-tảng-độc-lập">#</a></h1>
+<p>Một trong những tính năng quan trọng nhất của Java là cung cấp tính độc lập của nền tảng, dẫn đến cơ sở vật chất có tính di động. Cuối cùng sẽ biến nó trở thành sức mạnh lớn nhất của chính nó.</p>
+<p>Độc lập với nền tảng ở đây có nghĩa là một chương trình được biên dịch trên một máy có thể được thực thi trên bất kỳ máy nào khác trên thế giới. Đồng thời không gây ra bất kỳ thay đổi nào. Java sử dụng khái niệm mã BYTE để đạt được sự độc lập của nền tảng. Trình biên dịch của Java không bao giờ chuyển đổi mã nguồn thành mã máy giống như  trình biên dịch của C / C ++. Mà nó chuyển mã nguồn thành một mã trung gian gọi là mã byte. Mã byte này sẽ tiếp tục được dịch sang dạng phụ thuộc vào máy bởi một lớp phần mềm khác gọi là JVM (<strong>Java Virtual Machine</strong>).</p>
+<p>Vì thế, JVM có thể thực thi Bytecode trên bất kỳ nền tảng hoặc kệ điều hành nào mà có mặt chúng. Bất kể đó có thể là bytecode được tạo trên bất kì máy nào. Đây cũng chính là lý do mà Java mang khẩu hiệu “Viết một lần, chạy mọi nơi”. Điều này có nghĩa là các lập trình viên có thể phát triển các ứng dụng trên môi trường OSS và chạy trên bất kỳ một môi trường nào khác mà không cần thực hiện bất kỳ sự sửa đổi mã nào.</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2024 <a href="http://localhost:1313/">Blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>

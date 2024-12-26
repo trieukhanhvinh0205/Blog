@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Abouts on Blog</title>
+    <link>http://localhost:1313/about/</link>
+    <description>Recent content in Abouts on Blog</description>
+    <generator>Hugo -- 0.140.1</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://localhost:1313/about/th%C3%B4ng-tin-c%E1%BB%A7a-t%C3%B4i/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/th%C3%B4ng-tin-c%E1%BB%A7a-t%C3%B4i/</guid>
+      <description>&lt;h1 id=&#34;-chào-bạn-tôi-là-triệu-khánh-vinh&#34;&gt;👋 Chào bạn, tôi là &lt;em&gt;Triệu Khánh Vinh&lt;/em&gt;&lt;/h1&gt;
+&lt;h2 id=&#34;-liên-hệ-với-tôi&#34;&gt;📬 Liên hệ với tôi&lt;/h2&gt;
+&lt;p&gt;Nếu bạn muốn kết nối hoặc có bất kỳ câu hỏi nào, đừng ngần ngại liên hệ với tôi qua email:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Email:&lt;/em&gt; &lt;a href=&#34;mailto:trieukhanhvinh0205@gmail.com&#34;&gt;trieukhanhvinh0205@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-mạng-xã-hội&#34;&gt;🌍 Mạng xã hội&lt;/h2&gt;
+&lt;p&gt;Bạn có thể tìm thấy tôi ở các nền tảng sau:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.facebook.com/vinnn253/&#34;&gt;Facebook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trieukhanhvinh0205&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;-thông-tin-thêm&#34;&gt;📚 Thông tin thêm&lt;/h2&gt;
+&lt;p&gt;Tôi luôn tìm kiếm cơ hội để hợp tác trong các dự án thú vị và học hỏi thêm về các công nghệ mới. Nếu bạn có ý tưởng nào hoặc cần hỗ trợ về phát triển phần mềm, đừng ngần ngại liên hệ với tôi!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
