@@ -16,6 +16,14 @@ Bạn có thể tìm thấy tôi ở các nền tảng sau:
 - [Facebook](https://www.facebook.com/vinnn253/)  
 - [GitHub](https://github.com/trieukhanhvinh0205)  
 
+## 📍 Các chứng chỉ Ciso Network
+
+# 1. Networking Basic
+![](/images/chung_chi_1.jpg)
+# 2. JavaScript Essentials 1
+![](/images/chung_chi_2.jpg)
+# 3. JavaScript Essential 2
+![](/images/chung_chi_3.jpg)
 ## 📚 Thông tin thêm
 
 Tôi luôn tìm kiếm cơ hội để hợp tác trong các dự án thú vị và học hỏi thêm về các công nghệ mới. Nếu bạn có ý tưởng nào hoặc cần hỗ trợ về phát triển phần mềm, đừng ngần ngại liên hệ với tôi!
